@@ -1,4 +1,4 @@
-#Wallet.io
+# Wallet.io
 
 Utilized TypeScript and Vite for rapid development. Redux Toolkit efficiently manages state, while Material UI and Recharts create an appealing UI and stunning charts. Leveraging Node.js and Express.js, seamless API development, supported by MongoDB for scalability. Implemented machine learning (linear regression) for predictive analytics.
 Terminal commands to install important libraries/frameworks
