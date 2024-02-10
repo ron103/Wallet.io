@@ -30,14 +30,14 @@ app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
 
 /* MONGOOSE SETUP */
-
+const PORT = 10000
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(async () => {
-    app.listen(process.env.PORT, () => console.log(`Server Port: ${process.env.PORT}`));
+    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ADD DATA ONE TIME ONLY OR AS NEEDED */
     // await mongoose.connection.db.dropDatabase();
