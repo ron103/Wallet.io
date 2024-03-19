@@ -30,7 +30,7 @@ app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
 
 /* MONGOOSE SETUP */
-const PORT = 10000
+const PORT = process.env.PORT
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
